@@ -1,0 +1,32 @@
+@import '~styles/variables';
+
+.textarea {
+  background: none;
+  background-color: var(--background-controls);
+  border-radius: 0.25em;
+  color: var(--color-primary);
+  display: block;
+  font-family: inherit;
+  line-height: 1.5;
+  padding: 0.375em 0.5em;
+  resize: vertical;
+  width: 100%;
+
+  &::placeholder {
+    color: var(--color-secondary);
+    filter: brightness(70%);
+  }
+
+  &__label {
+    color: var(--color-secondary);
+    display: block;
+    font-size: $font-size-xs;
+    margin-bottom: 0.25em;
+  }
+
+  &:disabled {
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+    cursor: default;
+  }
+}
