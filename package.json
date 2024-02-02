@@ -1,14 +1,14 @@
 {
-  "name": "json-whiz",
-  "description": "Configurable JSON viewer app",
+  "name": "yate",
+  "description": "Yet Another Text Editor",
   "author": "Serhii Tyshchenko",
   "repository": {
     "type": "git",
-    "url": "https://github.com/serhii-tyshchenko/json-whiz"
+    "url": "https://github.com/serhii-tyshchenko/yate"
   },
   "license": "MIT",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.9.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
