@@ -1,0 +1,33 @@
+@import '~styles/variables';
+
+.input {
+  background-color: var(--background-controls);
+  border-radius: $border-radius;
+  color: var(--color-primary);
+  font-family: $font-primary;
+  line-height: 1.5;
+  padding: 0.375em 0.5em;
+  width: 100%;
+
+  &::placeholder {
+    color: var(--color-secondary);
+    filter: brightness(70%);
+  }
+
+  &--error {
+    border: 2px solid var(--color-error);
+  }
+
+  &__label {
+    color: var(--color-secondary);
+    display: block;
+    font-size: $font-size-xs;
+    margin-bottom: 0.25em;
+  }
+
+  &__error {
+    color: var(--color-error);
+    font-size: $font-size-xs;
+    padding-top: 0.25em;
+  }
+}

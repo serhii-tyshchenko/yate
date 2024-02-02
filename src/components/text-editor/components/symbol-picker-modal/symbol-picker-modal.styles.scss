@@ -1,0 +1,32 @@
+@import '~styles/variables';
+
+.symbol-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-evenly;
+  list-style: none;
+  user-select: none;
+
+  input {
+    display: none;
+  }
+}
+
+.symbol-list-item {
+  $size: 2.25rem;
+
+  align-items: center;
+  border: 1px solid var(--background-controls);
+  border-radius: $border-radius;
+  cursor: pointer;
+  display: flex;
+  height: $size;
+  justify-content: center;
+  line-height: 1;
+  width: $size;
+
+  &:hover {
+    background-color: var(--background-controls);
+  }
+}
